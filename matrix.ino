@@ -40,12 +40,12 @@ void setup()
 
   Matrix<4,4> rotationR    = {  cos( _thetaZ ), -sin( _thetaZ ),  0,  0,
                                 sin( _thetaZ ),  cos( _thetaZ ),  0,  baseline / 2,
-                                0,  0,  z,  0,
+                                0,  0,  1,  0,
                                 0,  0,  0,  1};
 
   Matrix<4,4> rotationR    = {  cos( -_thetaZ ), -sin( -_thetaZ ),  0,  0,
                                 sin( -_thetaZ ),  cos( -_thetaZ ),  0,  -baseline / 2,
-                                0,  0,  z,  0,
+                                0,  0,  1,  0,
                                 0,  0,  0,  1};
                                     
   Matrix<4,4> translationR = {  1,  0,  0,  0,
