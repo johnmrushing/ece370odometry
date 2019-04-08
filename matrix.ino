@@ -19,18 +19,18 @@ void rightTickInterrupt()
 { 
   globalMatrix = globalMatrix * transformR;
 
-  Serial.print( acos( globalMatrix( 0.0 ) ) ); //theta
-  Serial.print( globalMatrix( 1.3 ) ); //y
-  Serial.print( globalMatrix( 0.3 ) ); //x
+  Serial.print( acos( globalMatrix( 0, 0 ) ) ); //theta
+  Serial.print( globalMatrix( 1, 3 ) ); //y
+  Serial.print( globalMatrix( 0, 3 ) ); //x
 }
 
 void leftTickInterrupt()
 { 
   globalMatrix = globalMatrix * transformL;
 
-  Serial.print( acos( globalMatrix( 0.0 ) ) ); //theta
-  Serial.print( globalMatrix( 1.3 ) ); //y
-  Serial.print( globalMatrix( 0.3 ) ); //x
+  Serial.print( acos( globalMatrix( 0, 0 ) ) ); //theta
+  Serial.print( globalMatrix( 1, 3 ) ); //y
+  Serial.print( globalMatrix( 0, 3 ) ); //x
 }
 
 void setup()
